@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对称画布工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>对称画布工具</h1>
+        <div class="toolbar">
+            <div class="symmetry-controls">
+                <h3>对称设置:</h3>
+                <button id="horizontal" class="symmetry-btn">水平对称</button>
+                <button id="vertical" class="symmetry-btn">垂直对称</button>
+                <button id="central" class="symmetry-btn">中心对称</button>
+                <button id="showAxis" class="tool-btn">显示/隐藏对称轴</button>
+            </div>
+            <div class="separator"></div>
+            <div class="draw-controls">
+                <h3>绘画工具:</h3>
+                <button id="brush" class="tool-btn active">画笔</button>
+                <div class="tool-options">
+                    <div class="color-picker">
+                        <label for="color">颜色:</label>
+                        <input type="color" id="color" value="#000000">
+                    </div>
+                    <div class="size-picker">
+                        <label for="size">粗细:</label>
+                        <input type="range" id="size" min="1" max="20" value="5">
+                    </div>
+                </div>
+                <button id="clear" class="tool-btn">清除画布</button>
+            </div>
+        </div>
+        <div class="canvas-container">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
